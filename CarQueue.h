@@ -1,4 +1,4 @@
-// Specification file for the DynIntStack class.
+// Specification file for the CarQueue class.
 
 #ifndef CARQUEUE_H
 #define CARQUEUE_H

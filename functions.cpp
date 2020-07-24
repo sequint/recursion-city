@@ -8,13 +8,13 @@ using namespace std;
 
 
 //*******************************************************
-//					 INPUT FUNCTIONS					*
+//		      INPUT FUNCTIONS			*
 //*******************************************************
 
 
 //*************************************************************
-// menu Function											  *
-//															  *
+// menu Function					      *
+//							      *
 // The constructor initializes all variables to null or '0'.  *
 //*************************************************************
 
@@ -37,10 +37,10 @@ void menu(int& choice)
 }
 
 //*******************************************************************************************
-// enqueueCar Function																		*
-//																							*
-// This function get the user's input for a car name and the number of children in that		*
-// car, checks the variable boundries, the enqueue's the checked variables.					*
+// enqueueCar Function									    *
+//											    *
+// This function get the user's input for a car name and the number of children in that	    *
+// car, checks the variable boundries, the enqueue's the checked variables.		    *
 //*******************************************************************************************
 
 void enqueueCar(CarQueue& queue)
@@ -106,15 +106,15 @@ void enqueueCar(CarQueue& queue)
 
 
 //*******************************************************
-//					 OUTPUT FUNCTIONS					*
+//		     OUTPUT FUNCTIONS			*
 //*******************************************************
 
 
 //*******************************************************************************************
-// dequeueCar Function																		*
-//																							*
-// This functions checks if the stack is empty, if it is it print an empty message,			*
-// If the stack is not empty it dequeues the front node and prints an 'order' message.		*
+// dequeueCar Function									    *
+//											    *
+// This functions checks if the stack is empty, if it is it print an empty message,	    *
+// If the stack is not empty it dequeues the front node and prints an 'order' message.	    *
 //*******************************************************************************************
 
 void dequeueCar(CarQueue& queue)
@@ -138,9 +138,9 @@ void dequeueCar(CarQueue& queue)
 }
 
 //*******************************************************************************************
-// displayNumCars Function																	*
-//																							*
-// This function display's the number of cars in the queue.								    *
+// displayNumCars Function								    *
+//											    *
+// This function display's the number of cars in the queue.				    *
 //*******************************************************************************************
 
 void displayNumCars(CarQueue& queue)
@@ -160,11 +160,11 @@ void displayNumCars(CarQueue& queue)
 }
 
 //*******************************************************************************************
-// moveKidsToFront Function																	*
-//																							*
-// This function moves the car with the largest number of children to the front of the		*
-// queue by calling the largestCar function, and displays the information of the car that	*
-// was moved.																				*
+// moveKidsToFront Function								    *
+//											    *
+// This function moves the car with the largest number of children to the front of the	    *
+// queue by calling the largestCar function, and displays the information of the car that   *
+// was moved.										    *
 //*******************************************************************************************
 
 void moveKidsToFront(CarQueue& queue)
@@ -187,9 +187,9 @@ void moveKidsToFront(CarQueue& queue)
 }
 
 //*******************************************************************************************
-// moveFriendToFront Function																*
-//																							*
-// This function get's a name from the user, then checks the queue for a matching name.		*
+// moveFriendToFront Function								    *
+//											    *
+// This function get's a name from the user, then checks the queue for a matching name.	    *
 //*******************************************************************************************
 
 void moveFriendToFront(CarQueue& queue)
@@ -220,9 +220,9 @@ void moveFriendToFront(CarQueue& queue)
 }
 
 //*******************************************************************************************
-// displayQueue Function																	*
-//																							*
-// This function calls printQueue in order to display the queue.							*
+// displayQueue Function								    *
+//											    *
+// This function calls printQueue in order to display the queue.			    *
 //*******************************************************************************************
 
 void displayQueue(CarQueue& queue)
@@ -231,9 +231,9 @@ void displayQueue(CarQueue& queue)
 }
 
 //*******************************************************************************************
-// goodbyeMessage Function																	*
-//																							*
-// This function prints a goodbye message used at the exit of the program. 					*
+// goodbyeMessage Function								    *
+//											    *
+// This function prints a goodbye message used at the exit of the program. 		    *
 //*******************************************************************************************
 
 void goodbyeMessage()
@@ -242,9 +242,9 @@ void goodbyeMessage()
 }
 
 //*******************************************************************************************
-// menuChoiceError Function																	*
-//																							*
-// This function prints an error message to inform user that their selection is not valid.	*
+// menuChoiceError Function								    *
+//											    *
+// This function prints an error message to inform user that their selection is not valid.  *
 //*******************************************************************************************
 
 void menuChoiceError(int& choice)
@@ -255,15 +255,15 @@ void menuChoiceError(int& choice)
 
 
 //*******************************************************
-//				INPUT VALIDATION FUNCTIONS				*
+//		INPUT VALIDATION FUNCTIONS		*
 //*******************************************************
 
 
 //*******************************************************************************************
-// isInteger Function																		*
-//																							*
-// This functions takes checks if the input is an integer, and prompts for another input	*
-// if it is not.																			*
+// isInteger Function									    *
+//											    *
+// This functions takes checks if the input is an integer, and prompts for another input    *
+// if it is not.									    *
 //*******************************************************************************************
 
 void isInteger(int& input)

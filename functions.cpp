@@ -1,4 +1,4 @@
-// Implementation file for the Inventory class.
+// Implementation file for the programs main functions.
 
 #include <iostream>
 #include <string>

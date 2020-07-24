@@ -1,7 +1,3 @@
-// Steven Quintana
-// Ch. 20 Assignment - Recursion and Queue Assigment
-// July 23, 2020
-
 // Main function file for Recursion and Queue Project.
 
 #include <iostream>

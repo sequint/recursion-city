@@ -10,15 +10,15 @@ class CarQueue
 private:
 	struct QueueNode
 	{
-		string carName;		  // Name of the party in line.
-		int numChildren;	  // Number of children in a car.
-		QueueNode* next;	  // Pointer to the next node.
+		string carName;       // Name of the party in line.
+		int numChildren;      // Number of children in a car.
+		QueueNode* next;      // Pointer to the next node.
 		QueueNode* previous;  // Pointer to the previous node.
 	};
 
 	QueueNode* front;  // Points to the front of the queue.
 	QueueNode* rear;   // Points to the rear of the queue.
-	int carsInQueue;      // Number of items in the queue.
+	int carsInQueue;   // Number of items in the queue.
 
 	// Private Member Functions
 	int countCars(QueueNode*) const;
@@ -41,11 +41,11 @@ public:
 	bool isEmpty() const;
 	void clear();
 
-	int numCars() const			 // Returns number of cars in the queue using countCars.
+	int numCars() const		  // Returns number of cars in the queue using countCars.
 	{
 		return countCars(front);
 	}
-	string getFrontName() const  // Returns name of the front car in the queue.
+	string getFrontName() const       // Returns name of the front car in the queue.
 	{
 		return front->carName;
 	}

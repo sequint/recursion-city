@@ -1,7 +1,3 @@
-// Steven Quintana
-// Ch. 20 Assignment - Recursion and Queue Assigment
-// July 23, 2020
-
 // Specification file for the DynIntStack class.
 
 #ifndef CARQUEUE_H

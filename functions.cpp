@@ -1,7 +1,3 @@
-// Steven Quintana
-// Ch. 20 Assignment - Recursion and Queue Assigment
-// July 23, 2020
-
 // Implementation file for the Inventory class.
 
 #include <iostream>

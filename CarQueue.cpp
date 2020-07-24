@@ -1,4 +1,4 @@
-// Implementation file for the DynIntStack class.
+// Implementation file for the CarQueue class.
 
 #include <iostream>
 #include <string>

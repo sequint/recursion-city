@@ -7,9 +7,9 @@ using namespace std;
 
 
 //****************************************************************
-// Constructor													 *
-//																 *
-// The constructor creates an empty queue.						 *
+// Constructor							 *
+//								 *
+// The constructor creates an empty queue.			 *
 //****************************************************************
 
 CarQueue::CarQueue()
@@ -20,9 +20,9 @@ CarQueue::CarQueue()
 }
 
 //****************************************************************
-// Destructor													 *
-//																 *
-// The destruct clears all elements in the queue.				 *
+// Destructor							 *
+//								 *
+// The destruct clears all elements in the queue.		 *
 //****************************************************************
 
 CarQueue::~CarQueue()
@@ -31,8 +31,8 @@ CarQueue::~CarQueue()
 }
 
 //****************************************************************
-// enqueue Function												 *
-//																 *
+// enqueue Function						 *
+//								 *
 // This function inserts a node value at the rear of the queue.  *
 //****************************************************************
 
@@ -80,10 +80,10 @@ void CarQueue::enqueue(string name, int num)
 }
 
 //****************************************************************
-// dequeue Function												 *
-//																 *
+// dequeue Function						 *
+//								 *
 // This function stores the member variables of the front node,  *
-// then deletes the front node from the queue.					 *
+// then deletes the front node from the queue.			 *
 //****************************************************************
 
 void CarQueue::dequeue(string& name, int& num)
@@ -171,11 +171,11 @@ int CarQueue::moveLargestCar()
 }
 
 //****************************************************************
-// moveNameMatched Function										 *
-//																 *
+// moveNameMatched Function					 *
+//								 *
 // This function calls nameMath to find a match. If a match is   *
 // found, the node with the match is broken from the queue and   *
-// placed in the front.											 *
+// placed in the front.						 *
 //****************************************************************
 
 int CarQueue::moveNameMatched(string& name)
@@ -220,15 +220,15 @@ int CarQueue::moveNameMatched(string& name)
 }
 
 //****************************************************************
-// printQueue Function											 *
-//																 *
+// printQueue Function						 *
+//								 *
 // This function loops through the queue and prints each node.	 *
 //****************************************************************
 
 void CarQueue::printQueue()
 {
 	QueueNode* nodePtr = front;  // To traverse the queue.
-	int counter = 1;			 // To store a node's position in the queue.
+	int counter = 1;	     // To store a node's position in the queue.
 
 	// If the queue is empty tell the user.
 	if (isEmpty())
@@ -256,10 +256,10 @@ void CarQueue::printQueue()
 }
 
 //****************************************************************
-// isEmpty Function												 *
-//																 *
+// isEmpty Function						 *
+//								 *
 // This funtion test the size of the queue to return true if	 *
-// the queue has more than '0' nodes, and false otherwise.		 *
+// the queue has more than '0' nodes, and false otherwise.	 *
 //****************************************************************
 
 bool CarQueue::isEmpty() const
@@ -279,16 +279,16 @@ bool CarQueue::isEmpty() const
 }
 
 //****************************************************************
-// clear Function												 *
-//																 *
-// This function loops through the entire queue and clears		 *
-// every node within it.										 *
+// clear Function						 *
+//								 *
+// This function loops through the entire queue and clears	 *
+// every node within it.					 *
 //****************************************************************
 
 void CarQueue::clear()
 {
 	string dumName;  // Dummy name value to pass into dequeue function.
-	int dumNum;		 // Dummy number value to pass into dequeue function.
+	int dumNum;	 // Dummy number value to pass into dequeue function.
 
 	// While the queue is not empty, dequeue the front node.
 	while (!isEmpty())
@@ -300,14 +300,14 @@ void CarQueue::clear()
 
 
 //****************************************************************
-//                PRIVATE MEMEBER FUNCTIONS						 *
+//                PRIVATE MEMEBER FUNCTIONS			 *
 //****************************************************************
 
 //****************************************************************
-// countCars Function											 *
-//																 *
-// This function traverses the queue and creates a running		 *
-// total of cars in the queue using recursion.					 *
+// countCars Function						 *
+//								 *
+// This function traverses the queue and creates a running	 *
+// total of cars in the queue using recursion.			 *
 //****************************************************************
 
 int CarQueue::countCars(QueueNode* nodePtr) const
@@ -326,8 +326,8 @@ int CarQueue::countCars(QueueNode* nodePtr) const
 }
 
 //****************************************************************
-// largestNum Function											 *
-//																 *
+// largestNum Function						 *
+//								 *
 // This function uses recursion to traverse while storing a      *
 // 'left' and 'right' value at each iteration to compare on the  *
 // reverse traverse, then it returns the highest value.          *
@@ -336,7 +336,7 @@ int CarQueue::countCars(QueueNode* nodePtr) const
 int CarQueue::largestNum(QueueNode* nodePtr)
 {
 	int currentNum = nodePtr->numChildren;  // To hold the numChildren value of the current (left) node for each recursive iteration.
-	int nextNum;							// To hold the numChildren value of the next (right) node using recursive iterations.
+	int nextNum;				// To hold the numChildren value of the next (right) node using recursive iterations.
 
 	// If the pointer is pointing to the last node, return current nodes numChildren value.
 	if (nodePtr->next == nullptr)
@@ -362,8 +362,8 @@ int CarQueue::largestNum(QueueNode* nodePtr)
 }
 
 //****************************************************************
-// nameMatch Function											 *
-//																 *
+// nameMatch Function						 *
+//								 *
 // This function uses recursion to traverse the queue and check  *
 // for a name match, then returns it's position in the queue.	 *
 //****************************************************************
